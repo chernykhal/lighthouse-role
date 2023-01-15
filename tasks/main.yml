@@ -1,0 +1,12 @@
+---
+- name: Install Git
+  import_tasks: install/git.yml
+
+- name: Install Lighthouse (copy files)
+  import_tasks: install/lighthouse.yml
+
+- name: Configure Lighthouse
+  import_tasks: configure.yml
+
+- name: Flush handlers
+  ansible.builtin.meta: flush_handlers

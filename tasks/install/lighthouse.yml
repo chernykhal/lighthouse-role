@@ -1,0 +1,7 @@
+---
+- name: Copy lighthouse from git
+  git:
+    repo: "{{ lighthouse_vcs }}"
+    version: master
+    dest: "{{ lighthouse_dir }}"
+  become: true

@@ -1,0 +1,3 @@
+---
+lighthouse_dir: /opt/lighthouse
+lighthouse_log_dir: /var/log/nginx
